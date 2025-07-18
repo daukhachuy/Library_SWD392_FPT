@@ -1,0 +1,15 @@
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.deps.json
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\bin\Debug\net8.0\LibraryBussiness.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\bin\Debug\net8.0\LibraryBussiness.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.csproj.AssemblyReference.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.AssemblyInfoInputs.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.AssemblyInfo.cs
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.csproj.CoreCompileInputs.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryD.7A73DF82.Up2Date
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\refint\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\ref\LibraryDataAccess.dll

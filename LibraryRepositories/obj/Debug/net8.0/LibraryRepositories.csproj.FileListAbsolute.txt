@@ -1,0 +1,17 @@
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.deps.json
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryBussiness.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryBussiness.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\bin\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.csproj.AssemblyReference.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.AssemblyInfoInputs.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.AssemblyInfo.cs
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.csproj.CoreCompileInputs.cache
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryR.7D7AECD7.Up2Date
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\refint\LibraryRepositories.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.pdb
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\ref\LibraryRepositories.dll
