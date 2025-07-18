@@ -17,3 +17,4 @@ D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryService\obj\Debug\net8.0\L
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryService\obj\Debug\net8.0\refint\LibraryService.dll
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryService\obj\Debug\net8.0\LibraryService.pdb
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryService\obj\Debug\net8.0\ref\LibraryService.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryService\obj\Debug\net8.0\LibraryService.sourcelink.json

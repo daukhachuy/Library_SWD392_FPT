@@ -263,3 +263,4 @@ D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibrarySystem\obj\Debug\net8.0\re
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibrarySystem\obj\Debug\net8.0\LibrarySystem.pdb
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibrarySystem\obj\Debug\net8.0\LibrarySystem.genruntimeconfig.cache
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibrarySystem\obj\Debug\net8.0\ref\LibrarySystem.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibrarySystem\obj\Debug\net8.0\LibrarySystem.sourcelink.json
