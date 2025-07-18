@@ -12,3 +12,4 @@ D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryBussiness\obj\Debug\net8.0
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.pdb
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.genruntimeconfig.cache
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryBussiness\obj\Debug\net8.0\ref\LibraryBussiness.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.sourcelink.json

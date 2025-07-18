@@ -1,4 +1,5 @@
 ﻿using LibraryBussiness;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using Microsoft.EntityFrameworkCore.Update.Internal;
 using System;
@@ -78,7 +79,7 @@ namespace LibraryDataAccess
         }
 
 
-        public static bool DeleteBook(Book book)
+        public static void  DeleteBook(Book book)
         {
             try
             {
@@ -86,16 +87,14 @@ namespace LibraryDataAccess
                 var delete = _context.Books.FirstOrDefault(b => b.Id == book.Id);
                 if (delete != null)
                 {
-
+                    _context.Books.Remove(delete);
                     _context.SaveChanges();
 
                 }
-                return true;
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error delete book  : {ex.Message}");
-                return false;
             }
         }
 

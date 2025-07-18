@@ -15,3 +15,4 @@ D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\refint\LibraryRepositories.dll
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.pdb
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\ref\LibraryRepositories.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.sourcelink.json

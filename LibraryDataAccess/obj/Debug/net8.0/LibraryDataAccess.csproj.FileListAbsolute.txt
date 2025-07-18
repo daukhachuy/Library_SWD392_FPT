@@ -13,3 +13,4 @@ D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\refint\LibraryDataAccess.dll
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.pdb
 D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\ref\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\PRN222\pe\SWD392_Project_Library\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.sourcelink.json
