@@ -18,7 +18,10 @@ namespace LibrarySystem
 
             builder.Services.AddScoped<IUserRepositories, UserRepositories>();
             builder.Services.AddScoped<IUserService, UserService>();
-
+            builder.Services.AddScoped<IBookRepositories, BookRepositories>();
+            builder.Services.AddScoped<IBorrowRecordRepository, BorrowRecordRepository>();
+            builder.Services.AddScoped<IBookService, Bookservice>();
+            builder.Services.AddScoped<IBorrowRecordService, BorrowRecordService>();
 
             //   Add services to the container.
 
