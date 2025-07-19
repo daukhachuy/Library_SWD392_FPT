@@ -19,6 +19,8 @@ public partial class BorrowRecord
 
     public string? Status { get; set; }
 
+    //public int? Rating { get; set; }         // 1-5 sao
+    //public string? ReviewComment { get; set; }
     public virtual Book? Book { get; set; }
 
     public virtual User? User { get; set; }
