@@ -14,5 +14,9 @@ namespace LibraryService
         void AddBook(Book book);
         void UpdateBook(Book book);
         bool DeleteBook(Book book);
+        bool IsBookAvailable(int bookId);
+        void DecreaseQuantity(int bookId);
+        void IncreaseQuantity(int bookId);
+        List<Book> GetAvailableBooks();
     }
 }
