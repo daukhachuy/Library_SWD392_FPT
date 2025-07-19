@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryRepositories
 {
-    public interface BookRepositories : IBookRepositories
+    public class BookRepositories : IBookRepositories
     {
         public List<Book> GetAllBooks() => BookDao.GetAllBooks();
         public Book? GetBookById(int id) => BookDao.GetBookById(id);

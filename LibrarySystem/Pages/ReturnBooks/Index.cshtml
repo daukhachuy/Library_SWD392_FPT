@@ -1,0 +1,35 @@
+﻿@page
+@model LibraryWeb.Pages.ReturnBooks.IndexModel
+@{
+    ViewData["Title"] = "Return Books";
+}
+
+<h2>Return Books</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Book Title</th>
+            <th>Borrow Date</th>
+            <th>Due Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var record in Model.BorrowedBooks)
+        {
+            <tr>
+                <td>@record.Book?.Title</td>
+                <td>@record.BorrowDate?.ToString("dd/MM/yyyy")</td>
+                <td>@record.DueDate?.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="recordId" value="@record.Id" />
+                        <input type="hidden" name="bookId" value="@record.Id" />
+                        <button type="submit" class="btn btn-success">Return</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
