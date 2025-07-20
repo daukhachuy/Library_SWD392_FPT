@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using LibraryBussiness;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using LibraryBussiness;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LibrarySystem.Pages.Book
 {
@@ -17,7 +18,7 @@ namespace LibrarySystem.Pages.Book
         {
             _context = context;
         }
-
+        [Authorize(Policy = "AdminOnly")]
         public IActionResult OnGet()
         {
         ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");

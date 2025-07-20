@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FPT\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj": {}
+    "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj": {}
   },
   "projects": {
-    "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
+    "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
+        "projectUniqueName": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
         "projectName": "LibraryBussiness",
-        "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
-        "packagesPath": "C:\\Users\\HELLO\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\obj\\",
+        "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HELLO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -89,24 +89,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj": {
+    "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
+        "projectUniqueName": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
         "projectName": "LibraryDataAccess",
-        "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
-        "packagesPath": "C:\\Users\\HELLO\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\obj\\",
+        "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HELLO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
-                "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj"
+              "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
+                "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj"
               }
             }
           }
@@ -158,24 +158,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\FPT\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj": {
+    "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FPT\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj",
+        "projectUniqueName": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj",
         "projectName": "LibraryRepositories",
-        "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj",
-        "packagesPath": "C:\\Users\\HELLO\\.nuget\\packages\\",
-        "outputPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryRepositories\\obj\\",
+        "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryRepositories\\LibraryRepositories.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryRepositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HELLO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -190,11 +190,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
-                "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj"
+              "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj": {
+                "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj"
               },
-              "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj": {
-                "projectPath": "D:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj"
+              "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj": {
+                "projectPath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj"
               }
             }
           }
@@ -230,7 +230,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -13,8 +13,7 @@ namespace LibrarySystem
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddDbContext<Swd392Group2Context>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionStringDB")));
-
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnectionStringDB")));
 
             builder.Services.AddScoped<IUserRepositories, UserRepositories>();
             builder.Services.AddScoped<IUserService, UserService>();
@@ -22,10 +21,6 @@ namespace LibrarySystem
             builder.Services.AddScoped<IBorrowRecordRepository, BorrowRecordRepository>();
             builder.Services.AddScoped<IBookService, Bookservice>();
             builder.Services.AddScoped<IBorrowRecordService, BorrowRecordService>();
-
-            //   Add services to the container.
-
-
 
             builder.Services.AddSession(options =>
             {
@@ -38,19 +33,23 @@ namespace LibrarySystem
                .AddCookie(options =>
                {
                    options.LoginPath = "/Index";
-                   options.LogoutPath = "/Index";
-                   options.AccessDeniedPath = "/Index";
+                   options.LogoutPath = "/Account/Logout";
+                   options.AccessDeniedPath = "/AccessDenied";
                });
-            // Add services to the container.
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+                options.AddPolicy("AdminOrUser", policy => policy.RequireRole("Admin", "User"));
+            });
+
             builder.Services.AddRazorPages();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -59,7 +58,7 @@ namespace LibrarySystem
 
             app.UseRouting();
 
-            app.UseSession();      
+            app.UseSession();
 
             app.UseAuthentication();
 

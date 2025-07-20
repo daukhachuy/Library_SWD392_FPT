@@ -29,7 +29,7 @@ namespace LibrarySystem.Pages
                 }
                 if (User.IsInRole("User"))
                 {
-                    return RedirectToPage("");
+                    return RedirectToPage("/BorrowBooks/Index");
                 }
             }
             return Page();

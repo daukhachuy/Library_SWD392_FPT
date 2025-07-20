@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using LibraryBussiness;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using LibraryBussiness;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace LibrarySystem.Pages.Book
 {
@@ -20,7 +21,7 @@ namespace LibrarySystem.Pages.Book
 
         [BindProperty]
         public LibraryBussiness.Book Book { get; set; } = default!;
-
+        [Authorize(Policy = "AdminOnly")]
         public async Task<IActionResult> OnGetAsync(int? id)
         {
             if (id == null)
