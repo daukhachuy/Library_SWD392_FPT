@@ -6,14 +6,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using LibraryBussiness;
+using LibraryRepositories;
 
 namespace LibrarySystem.Pages.Book
 {
     public class DetailsModel : PageModel
     {
-        private readonly LibraryBussiness.Swd392Group2Context _context;
+        private readonly IBookRepositories _context;
 
-        public DetailsModel(LibraryBussiness.Swd392Group2Context context)
+        public DetailsModel(IBookRepositories context)
         {
             _context = context;
         }
@@ -27,7 +28,7 @@ namespace LibrarySystem.Pages.Book
                 return NotFound();
             }
 
-            var book = await _context.Books.FirstOrDefaultAsync(m => m.Id == id);
+            var book = _context.GetBookById(id.Value);
             if (book == null)
             {
                 return NotFound();

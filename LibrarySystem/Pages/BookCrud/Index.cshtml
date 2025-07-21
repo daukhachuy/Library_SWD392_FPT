@@ -9,18 +9,7 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-
-<!-- Thêm form tìm kiếm -->
-<form method="get" asp-page="./Index">
-    <div class="form-group">
-        <label for="searchString">Tìm kiếm sách:</label>
-        <input type="text" class="form-control" name="searchString" placeholder="Nhập tiêu đề hoặc tác giả..." />
-        <button type="submit" class="btn btn-primary mt-2">Tìm kiếm</button>
-        <a asp-page="./Index" class="btn btn-secondary mt-2">Xóa bộ lọc</a>
-    </div>
-</form>
-
-<table class="table mt-4">
+<table class="table table-bordered table-hover text-center">
     <thead>
         <tr>
             <th>

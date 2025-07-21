@@ -52,6 +52,7 @@ D:\FPT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositori
 D:\FPT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\refint\LibraryRepositories.dll
 D:\FPT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.pdb
 D:\FPT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\ref\LibraryRepositories.dll
+<<<<<<< HEAD
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.deps.json
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.dll
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.pdb
@@ -70,3 +71,23 @@ E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\Lib
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\refint\LibraryRepositories.dll
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.pdb
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\ref\LibraryRepositories.dll
+=======
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.deps.json
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryRepositories.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryBussiness.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryBussiness.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\bin\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.csproj.AssemblyReference.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.AssemblyInfoInputs.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.AssemblyInfo.cs
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.csproj.CoreCompileInputs.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.sourcelink.json
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryR.7D7AECD7.Up2Date
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\refint\LibraryRepositories.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\LibraryRepositories.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryRepositories\obj\Debug\net8.0\ref\LibraryRepositories.dll
+>>>>>>> cf6f0be78374badafceee66b9c3409c62adbcadd

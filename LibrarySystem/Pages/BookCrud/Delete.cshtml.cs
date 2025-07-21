@@ -7,14 +7,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using LibraryBussiness;
+using LibraryRepositories;
 
 namespace LibrarySystem.Pages.Book
 {
     public class DeleteModel : PageModel
     {
-        private readonly LibraryBussiness.Swd392Group2Context _context;
+        private readonly IBookRepositories _context;
 
-        public DeleteModel(LibraryBussiness.Swd392Group2Context context)
+        public DeleteModel(IBookRepositories context)
         {
             _context = context;
         }
@@ -29,7 +34,7 @@ namespace LibrarySystem.Pages.Book
                 return NotFound();
             }
 
-            var book = await _context.Books.FirstOrDefaultAsync(m => m.Id == id);
+            var book = _context.GetBookById(id.Value);
 
             if (book == null)
             {
@@ -48,15 +53,8 @@ namespace LibrarySystem.Pages.Book
             {
                 return NotFound();
             }
-
-            var book = await _context.Books.FindAsync(id);
-            if (book != null)
-            {
-                Book = book;
-                _context.Books.Remove(Book);
-                await _context.SaveChangesAsync();
-            }
-
+            var book = _context.GetBookById(id.Value);
+            _context.DeleteBook(book);
             return RedirectToPage("./Index");
         }
     }

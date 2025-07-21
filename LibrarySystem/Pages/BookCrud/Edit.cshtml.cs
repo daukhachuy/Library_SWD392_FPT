@@ -8,14 +8,20 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using LibraryBussiness;
+using LibraryRepositories;
 
 namespace LibrarySystem.Pages.Book
 {
     public class EditModel : PageModel
     {
-        private readonly LibraryBussiness.Swd392Group2Context _context;
+        private readonly IBookRepositories _context;
 
-        public EditModel(LibraryBussiness.Swd392Group2Context context)
+        public EditModel(IBookRepositories context)
         {
             _context = context;
         }
@@ -31,13 +37,13 @@ namespace LibrarySystem.Pages.Book
                 return NotFound();
             }
 
-            var book =  await _context.Books.FirstOrDefaultAsync(m => m.Id == id);
+            var book =  _context.GetBookById(id.Value);
             if (book == null)
             {
                 return NotFound();
             }
             Book = book;
-           ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+           ViewData["CategoryId"] = new SelectList(_context.GetAllBooks(), "Id", "Name");
             return Page();
         }
 
@@ -50,30 +56,14 @@ namespace LibrarySystem.Pages.Book
                 return Page();
             }
 
-            _context.Attach(Book).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!BookExists(Book.Id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            _context.UpdateBook(Book);
 
             return RedirectToPage("./Index");
         }
 
         private bool BookExists(int id)
         {
-            return _context.Books.Any(e => e.Id == id);
+            return _context.GetAllBooks().Any(e => e.Id == id);
         }
     }
 }

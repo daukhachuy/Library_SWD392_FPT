@@ -1,5 +1,5 @@
 ﻿using LibraryBussiness;
-using Microsoft.AspNetCore.Authorization;
+using LibraryRepositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -7,21 +7,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LibrarySystem.Pages.Book
 {
     public class CreateModel : PageModel
     {
-        private readonly LibraryBussiness.Swd392Group2Context _context;
+        private readonly IBookRepositories _context;
 
-        public CreateModel(LibraryBussiness.Swd392Group2Context context)
+        public CreateModel(IBookRepositories context)
         {
             _context = context;
         }
         [Authorize(Policy = "AdminOnly")]
         public IActionResult OnGet()
         {
-        ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Name");
+            
+        ViewData["CategoryId"] = new SelectList(_context.GetAllBooks(), "Id", "Name");
             return Page();
         }
 
@@ -36,8 +38,7 @@ namespace LibrarySystem.Pages.Book
                 return Page();
             }
 
-            _context.Books.Add(Book);
-            await _context.SaveChangesAsync();
+            _context.AddBook(Book);
 
             return RedirectToPage("./Index");
         }

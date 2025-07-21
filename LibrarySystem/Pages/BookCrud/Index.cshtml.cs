@@ -7,15 +7,16 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using LibraryBussiness;
 using Microsoft.AspNetCore.Authorization;
+using LibraryRepositories;
 
 namespace LibrarySystem.Pages.Book
 {
     [Authorize(Policy = "AdminOnly")] 
     public class IndexModel : PageModel
     {
-        private readonly LibraryBussiness.Swd392Group2Context _context;
+        private readonly IBookRepositories _context;
 
-        public IndexModel(LibraryBussiness.Swd392Group2Context context)
+        public IndexModel(IBookRepositories context)
         {
             _context = context;
         }
@@ -26,14 +27,7 @@ namespace LibrarySystem.Pages.Book
 
         public async Task OnGetAsync()
         {
-            var books = _context.Books.Include(b => b.Category).AsQueryable();
-
-            if (!string.IsNullOrEmpty(SearchString))
-            {
-                books = books.Where(b => b.Title.Contains(SearchString) || b.Author.Contains(SearchString));
-            }
-
-            Book = await books.ToListAsync();
+            Book =  _context.GetAllBooks().ToList();
         }
     }
 }

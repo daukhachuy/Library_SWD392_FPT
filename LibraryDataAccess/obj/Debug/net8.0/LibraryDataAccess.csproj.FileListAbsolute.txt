@@ -46,6 +46,7 @@ D:\FPT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.d
 D:\FPT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\refint\LibraryDataAccess.dll
 D:\FPT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.pdb
 D:\FPT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\ref\LibraryDataAccess.dll
+<<<<<<< HEAD
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.deps.json
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.dll
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.pdb
@@ -62,3 +63,21 @@ E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\Libra
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\refint\LibraryDataAccess.dll
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.pdb
 E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\ref\LibraryDataAccess.dll
+=======
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.deps.json
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryBussiness.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\bin\Debug\net8.0\LibraryBussiness.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.csproj.AssemblyReference.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.AssemblyInfoInputs.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.AssemblyInfo.cs
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.csproj.CoreCompileInputs.cache
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.sourcelink.json
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryD.7A73DF82.Up2Date
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\refint\LibraryDataAccess.dll
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\LibraryDataAccess.pdb
+D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryDataAccess\obj\Debug\net8.0\ref\LibraryDataAccess.dll
+>>>>>>> cf6f0be78374badafceee66b9c3409c62adbcadd
