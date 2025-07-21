@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LibrarySystem.Pages.Book
 {
@@ -18,7 +19,7 @@ namespace LibrarySystem.Pages.Book
         {
             _context = context;
         }
-
+        [Authorize(Policy = "AdminOnly")]
         public IActionResult OnGet()
         {
             
