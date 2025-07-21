@@ -1,5 +1,6 @@
 ﻿using LibraryBussiness;
 using LibraryRepositories;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 
@@ -43,21 +44,28 @@ namespace LibraryService
             _bookRepo.UpdateBook(book);
         }
 
-        public void ReturnBook(int recordId, DateOnly returnDate)
+        public void ReturnBook(int recordId)
         {
             var record = _borrowRepo.GetById(recordId);
             if (record == null || record.Status == "Returned") return;
 
-            _borrowRepo.Return(recordId, returnDate);
+            record.Status = "Returned";
+            record.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
+            _borrowRepo.Update(record);
 
             var book = record.Book;
             if (book != null)
             {
                 book.Quantity += 1;
-                book.Availability = true;
+                if (book.Quantity > 0)
+                {
+                    book.Availability = true;
+                }
                 _bookRepo.UpdateBook(book);
             }
         }
+
+
 
         public void CreateBorrowRecord(BorrowRecord record)
         {
@@ -67,21 +75,23 @@ namespace LibraryService
         public void MarkAsReturned(int recordId)
         {
             var record = _borrowRepo.GetById(recordId);
-            if (record != null && record.Status != "Returned")
+
+            if (record != null && record.ReturnDate == null)
             {
-                record.Status = "Returned";
                 record.ReturnDate = DateOnly.FromDateTime(DateTime.Now);
                 _borrowRepo.Update(record);
 
-                var book = record.Book;
-                if (book != null)
+                if (record.Book != null)
                 {
-                    book.Quantity += 1;
-                    book.Availability = true;
-                    _bookRepo.UpdateBook(book);
+                    record.Book.Quantity += 1;
+                    record.Book.Availability = true;
+                    _bookRepo.UpdateBook(record.Book);
                 }
+
             }
         }
+
+
 
         public List<BorrowRecord> GetUnreturnedRecordsByUser(int userId)
         {
@@ -91,15 +101,13 @@ namespace LibraryService
         }
 
     }
+    //public void SubmitReview(int borrowRecordId, int rating, string comment)
+    //{
+    //    if (rating < 1 || rating > 5)
+    //    {
+    //        throw new Exception("Rating phải từ 1 đến 5.");
+    //    }
 
-
-        //public void SubmitReview(int borrowRecordId, int rating, string comment)
-        //{
-        //    if (rating < 1 || rating > 5)
-        //    {
-        //        throw new Exception("Rating phải từ 1 đến 5.");
-        //    }
-
-        //    _borrowRepo.SubmitReview(borrowRecordId, rating, comment);
-        //}
+    //    _borrowRepo.SubmitReview(borrowRecordId, rating, comment);
+    //}
 }

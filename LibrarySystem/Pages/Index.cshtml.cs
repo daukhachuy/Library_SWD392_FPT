@@ -29,7 +29,7 @@ namespace LibrarySystem.Pages
                 }
                 if (User.IsInRole("User"))
                 {
-                    return RedirectToPage("");
+                    return RedirectToPage("/Books/Index");
                 }
             }
             return Page();
@@ -50,12 +50,14 @@ namespace LibrarySystem.Pages
                 {
                     var claims = new List<Claim>
                     {
+                        new Claim(ClaimTypes.NameIdentifier, account.Id.ToString()),
                         new Claim(ClaimTypes.Email, account.Email),
                         new Claim(ClaimTypes.Name, account.Username),
                         new Claim(ClaimTypes.Role, account.Role)
                     };
                     var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                     var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal,
                         new AuthenticationProperties
                         {
@@ -69,7 +71,7 @@ namespace LibrarySystem.Pages
                     }
                     if (account.Role.Equals("User"))
                     {
-                        return RedirectToPage("");
+                        return RedirectToPage("/Books/Index");
                     }
 
                 }

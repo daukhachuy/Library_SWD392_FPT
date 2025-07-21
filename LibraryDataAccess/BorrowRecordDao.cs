@@ -44,14 +44,30 @@ namespace LibraryDataAccess
         public static void ReturnBook(int recordId, DateOnly returnDate)
         {
             using var context = new Swd392Group2Context();
-            var record = context.BorrowRecords.FirstOrDefault(b => b.Id == recordId);
-            if (record != null)
+            var record = context.BorrowRecords
+                                .Include(br => br.Book)
+                                .FirstOrDefault(b => b.Id == recordId);
+
+            if (record == null)
+                throw new Exception("Không tìm thấy bản ghi mượn sách.");
+
+            if (record.Status == "Returned")
+                throw new Exception("Sách này đã được trả rồi.");
+
+            // Cập nhật trạng thái trả
+            record.ReturnDate = returnDate;
+            record.Status = "Returned";
+
+            // Tăng lại số lượng sách trong kho
+            if (record.Book != null)
             {
-                record.ReturnDate = returnDate;
-                record.Status = "Returned";
-                context.SaveChanges();
+                record.Book.Quantity += 1;
             }
+
+            context.SaveChanges();
         }
+
+
         public static void UpdateBorrowRecord(BorrowRecord record)
         {
             using var context = new Swd392Group2Context();
@@ -59,9 +75,12 @@ namespace LibraryDataAccess
             if (existing != null)
             {
                 existing.ReturnDate = record.ReturnDate;
+                existing.Status = record.Status; // 👈 thêm dòng này!
                 context.SaveChanges();
             }
         }
+
+
         //public static void SubmitReview(int borrowRecordId, int rating, string comment)
         //{
         //    using var context = new Swd392Group2Context();

@@ -9,8 +9,8 @@ namespace LibraryService
         List<BorrowRecord> GetByUserId(int userId);
         BorrowRecord? GetById(int id);
         void BorrowBook(int userId, int bookId);
-        void ReturnBook(int recordId, DateOnly returnDate);
-        void CreateBorrowRecord(BorrowRecord record);
+        void ReturnBook(int recordId);
+        void CreateBorrowRecord(BorrowRecord record);   
         void MarkAsReturned(int recordId);
         List<BorrowRecord> GetUnreturnedRecordsByUser(int userId);
 

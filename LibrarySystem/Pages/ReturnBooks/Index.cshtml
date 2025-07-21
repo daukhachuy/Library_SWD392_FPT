@@ -1,35 +1,26 @@
-﻿@page
+﻿@page "{recordId:int?}"
 @model LibraryWeb.Pages.ReturnBooks.IndexModel
 @{
-    ViewData["Title"] = "Return Books";
+    ViewData["Title"] = "Return Confirmation";
 }
 
-<h2>Return Books</h2>
+@if (Model.SelectedRecord != null)
+{
+    <h3>Bạn có chắc chắn muốn trả sách này?</h3>
+    <div>
+        <p><strong>Tiêu đề:</strong> @Model.SelectedRecord.Book?.Title</p>
+        <p><strong>Ngày mượn:</strong> @Model.SelectedRecord.BorrowDate?.ToString("dd/MM/yyyy")</p>
+        <p><strong>Ngày hết hạn:</strong> @Model.SelectedRecord.DueDate?.ToString("dd/MM/yyyy")</p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Book Title</th>
-            <th>Borrow Date</th>
-            <th>Due Date</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var record in Model.BorrowedBooks)
-        {
-            <tr>
-                <td>@record.Book?.Title</td>
-                <td>@record.BorrowDate?.ToString("dd/MM/yyyy")</td>
-                <td>@record.DueDate?.ToString("dd/MM/yyyy")</td>
-                <td>
-                    <form method="post">
-                        <input type="hidden" name="recordId" value="@record.Id" />
-                        <input type="hidden" name="bookId" value="@record.Id" />
-                        <button type="submit" class="btn btn-success">Return</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <form method="post" asp-page-handler="Return">
+            <input type="hidden" name="recordId" value="@Model.SelectedRecord.Id" />
+            <input type="hidden" name="bookId" value="@Model.SelectedRecord.BookId" />
+            <button type="submit" class="btn btn-success">Xác nhận trả</button>
+            <a asp-page="/Books/Index" class="btn btn-secondary">Hủy</a>
+        </form>
+    </div>
+}
+else
+{
+    <p class="text-danger">Không tìm thấy bản ghi mượn tương ứng.</p>
+}
