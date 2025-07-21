@@ -1,0 +1,78 @@
+﻿@page
+@model LibraryWeb.Pages.Books.IndexModel
+
+<h2>📚 Danh sách sách</h2>
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tựa sách</th>
+            <th>Tác giả</th>
+            <th>Trạng thái</th>
+            <th>Số lượng</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var book in Model.Books)
+        {
+            var currentBorrow = Model.BorrowedRecords.FirstOrDefault(r => r.BookId == book.Id);
+            bool isBorrowed = currentBorrow != null;
+            bool isReturned = currentBorrow?.Status == "Returned";
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>
+                    @if (isBorrowed)
+                    {
+                        <span class="text-warning">Đã mượn</span>
+                    }
+                    else if (book.Quantity > 0)
+                    {
+                        <span class="text-success">Có sẵn</span>
+                    }
+                    else
+                    {
+                        <span class="text-danger">Hết sách</span>
+                    }
+                </td>
+                <td>@book.Quantity</td>
+                <td>
+                    @if (!isBorrowed && book.Quantity > 0)
+                    {
+                        <form method="get" asp-page="/BorrowBooks/Index">
+                            <input type="hidden" name="bookId" value="@book.Id" />
+                            <button type="submit" class="btn btn-primary">Mượn</button>
+                        </form>
+                    }
+                    else if (isBorrowed && !isReturned)
+                    {
+                        <form method="get" asp-page="/ReturnBooks/Index">
+                            <input type="hidden" name="recordId" value="@Model.BorrowedRecords.First(r => r.BookId == book.Id).Id" />
+                            <button type="submit" class="btn btn-success">Trả</button>
+                        </form>
+
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
