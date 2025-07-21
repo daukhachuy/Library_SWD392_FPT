@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wrer6vnOWO8=",
+  "dgSpecHash": "JSWC2ZtfS7k=",
   "success": true,
-  "projectFilePath": "E:\\SE_Ky7\\LibraryPRJ\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
+  "projectFilePath": "E:\\FPT\\Library_SWD392_FPT\\LibraryDataAccess\\LibraryDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

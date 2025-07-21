@@ -1,8 +1,8 @@
-using System;
-using LibraryBussiness;
+﻿using LibraryBussiness;
 using LibraryService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.Security.Claims;
 
 namespace LibraryWeb.Pages.BorrowBooks
 {
@@ -17,33 +17,68 @@ namespace LibraryWeb.Pages.BorrowBooks
             _borrowRecordService = borrowRecordService;
         }
 
-        public List<Book> AvailableBooks { get; set; }
+        [BindProperty]
+        public Book? SelectedBook { get; set; }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(int? bookId)
         {
-            AvailableBooks = _bookService.GetAvailableBooks();
+            if (bookId == null)
+            {
+                return RedirectToPage("/Books/Index");
+            }
+
+            SelectedBook = _bookService.GetBookById(bookId.Value);
+
+            if (SelectedBook == null)
+            {
+                return RedirectToPage("/Books/Index");
+            }
+
             return Page();
         }
 
         public IActionResult OnPostBorrow(int bookId)
         {
-            // TODO: Get user ID from session or auth
-            int userId = 1;
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null) return RedirectToPage("/Index");
 
-            if (!_bookService.IsBookAvailable(bookId))
-                return RedirectToPage("Index");
+            int userId = int.Parse(userIdClaim.Value);
 
+            var book = _bookService.GetBookById(bookId);
+            if (book == null || book.Quantity <= 0)
+            {
+                TempData["ErrorMessage"] = "Sách không còn để mượn!";
+                return RedirectToPage("/Books/Index");
+            }
+
+            // 🔒 Check: User đã mượn và chưa trả?
+            var hasUnreturned = _borrowRecordService
+                .GetUnreturnedRecordsByUser(userId)
+                .Any(r => r.BookId == bookId);
+
+            if (hasUnreturned)
+            {
+                TempData["ErrorMessage"] = "Bạn đã mượn sách này và chưa trả.";
+                return RedirectToPage("/Books/Index");
+            }
+
+            // ✅ Ghi nhận mượn
             _borrowRecordService.CreateBorrowRecord(new BorrowRecord
             {
                 UserId = userId,
                 BookId = bookId,
                 BorrowDate = DateOnly.FromDateTime(DateTime.Now),
                 DueDate = DateOnly.FromDateTime(DateTime.Now.AddDays(14)),
-                ReturnDate = null
+                ReturnDate = null,
+                Status = "Borrowed"
             });
 
             _bookService.DecreaseQuantity(bookId);
-            return RedirectToPage("Index");
+
+            TempData["SuccessMessage"] = "Mượn sách thành công!";
+            return RedirectToPage("/Books/Index");
         }
+
+
     }
 }

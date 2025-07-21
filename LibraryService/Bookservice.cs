@@ -15,10 +15,12 @@ namespace LibraryService
         private readonly IBookRepositories _bookRepositories;
 
         private readonly Swd392Group2Context _context;
-        public Bookservice(IBookRepositories bookRepositories)
+        public Bookservice(IBookRepositories bookRepositories, Swd392Group2Context context)
         {
             _bookRepositories = bookRepositories;
+            _context = context;
         }
+
         public List<Book> GetAllBooks() => _bookRepositories.GetAllBooks();
         public Book? GetBookById(int id) => _bookRepositories.GetBookById(id);
         public void AddBook(Book book) => _bookRepositories.AddBook(book);
@@ -29,17 +31,17 @@ namespace LibraryService
         {
             var books = _bookRepositories.GetAllBooks().ToList();
             var borrowrecord = _context.BorrowRecords.FirstOrDefault(b => b.BookId == book.Id);
-            if (borrowrecord == null )
+            if (borrowrecord == null)
             {
                 _bookRepositories.DeleteBook(book);
-                return  true;
+                return true;
             }
             else
             {
                 return false;
             }
 
-                
+
         }
         public bool IsBookAvailable(int bookId)
         {
@@ -49,25 +51,29 @@ namespace LibraryService
 
         public void DecreaseQuantity(int bookId)
         {
-            var book = _bookRepositories.GetBookById(bookId);
+            var book = GetBookById(bookId);
             if (book != null && book.Quantity > 0)
             {
-                book.Quantity--;
-                if (book.Quantity == 0) book.Availability = false;
-                _bookRepositories.UpdateBook(book);
+                book.Quantity -= 1;
+                book.Availability = book.Quantity > 0;
+                UpdateBook(book);
             }
         }
 
         public void IncreaseQuantity(int bookId)
         {
-            var book = _bookRepositories.GetBookById(bookId);
+            var book = GetBookById(bookId);
             if (book != null)
             {
-                book.Quantity++;
-                book.Availability = true;
-                _bookRepositories.UpdateBook(book);
+                book.Quantity += 1;
+                if (book.Quantity > 0)
+                {
+                    book.Availability = true;
+                }
+                UpdateBook(book);
             }
         }
+
 
         public List<Book> GetAvailableBooks()
         {
