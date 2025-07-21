@@ -1,34 +1,26 @@
-﻿@page
+﻿@page "{bookId:int?}"
 @model LibraryWeb.Pages.BorrowBooks.IndexModel
 @{
-    ViewData["Title"] = "Borrow Books";
+    ViewData["Title"] = "Borrow Confirmation";
 }
 
-<h2>Borrow Books</h2>
+@if (Model.SelectedBook != null)
+{
+    <h3>Bạn có chắc chắn muốn mượn sách này?</h3>
+    <div>
+        <p><strong>Tiêu đề:</strong> @Model.SelectedBook.Title</p>
+        <p><strong>Tác giả:</strong> @Model.SelectedBook.Author</p>
+        <p><strong>Số lượng còn lại:</strong> @Model.SelectedBook.Quantity</p>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Author</th>
-            <th>Available</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var book in Model.AvailableBooks)
-        {
-            <tr>
-                <td>@book.Title</td>
-                <td>@book.Author</td>
-                <td>@book.Quantity</td>
-                <td>
-                    <form method="post">
-                        <input type="hidden" name="bookId" value="@book.Id" />
-                        <button type="submit" class="btn btn-primary">Borrow</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+        <form method="post" asp-page-handler="Borrow">
+            <input type="hidden" name="bookId" value="@Model.SelectedBook.Id" />
+            <button type="submit" class="btn btn-success">Xác nhận mượn</button>
+            <a asp-page="/Books/Index" class="btn btn-secondary">Hủy</a>
+        </form>
+
+    </div>
+}
+else
+{
+    <p class="text-danger">Không tìm thấy sách.</p>
+}
