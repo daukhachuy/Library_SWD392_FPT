@@ -1,0 +1,76 @@
+﻿@page
+@model LibrarySystem.Pages.Users.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+<div>
+    @if (TempData["Message"] != null)
+    {       
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+    }
+</div>
+
+<table class="table table-bordered table-hover text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Username)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Password)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].Status)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.User) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Role)
+            </td>
+            <td>
+               
+                    @if (item.Status)
+                    {
+                        <form method="post" asp-page-handler="Status" asp-route-id="@item.Id">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Active 
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" asp-page-handler="Status" asp-route-id="@item.Id">
+                            <button type="submit" class="btn btn-danger btn-sm">
+                                Inactive
+                            </button>
+                        </form>
+                    }
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
