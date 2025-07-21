@@ -43,23 +43,6 @@ D:\FPT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\refint\LibraryBussin
 D:\FPT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.pdb
 D:\FPT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.genruntimeconfig.cache
 D:\FPT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\ref\LibraryBussiness.dll
-<<<<<<< HEAD
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.deps.json
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.runtimeconfig.json
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.dll
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.pdb
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.csproj.AssemblyReference.cache
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.GeneratedMSBuildEditorConfig.editorconfig
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.AssemblyInfoInputs.cache
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.AssemblyInfo.cs
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.csproj.CoreCompileInputs.cache
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.sourcelink.json
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.dll
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\refint\LibraryBussiness.dll
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.pdb
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.genruntimeconfig.cache
-E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\ref\LibraryBussiness.dll
-=======
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.deps.json
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.runtimeconfig.json
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.dll
@@ -75,4 +58,18 @@ D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.pdb
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.genruntimeconfig.cache
 D:\FPT\Ki7FPT\SWD392\PROJECT\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\ref\LibraryBussiness.dll
->>>>>>> cf6f0be78374badafceee66b9c3409c62adbcadd
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.deps.json
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.runtimeconfig.json
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.dll
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\bin\Debug\net8.0\LibraryBussiness.pdb
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.csproj.AssemblyReference.cache
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.GeneratedMSBuildEditorConfig.editorconfig
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.AssemblyInfoInputs.cache
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.AssemblyInfo.cs
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.csproj.CoreCompileInputs.cache
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.sourcelink.json
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.dll
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\refint\LibraryBussiness.dll
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.pdb
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\LibraryBussiness.genruntimeconfig.cache
+E:\SE_Ky7\LibraryPRJ\Library_SWD392_FPT\LibraryBussiness\obj\Debug\net8.0\ref\LibraryBussiness.dll
