@@ -11,7 +11,7 @@ using LibraryRepositories;
 
 namespace LibrarySystem.Pages.Book
 {
-    [Authorize(Policy = "AdminOnly")] 
+    [Authorize(Policy = "AdminOnly")]
     public class IndexModel : PageModel
     {
         private readonly IBookRepositories _context;
@@ -22,12 +22,22 @@ namespace LibrarySystem.Pages.Book
         }
 
         public IList<LibraryBussiness.Book> Book { get; set; } = default!;
+
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }
 
         public async Task OnGetAsync()
         {
-            Book =  _context.GetAllBooks().ToList();
+            var allBooks = _context.GetAllBooks();
+
+            if (!string.IsNullOrWhiteSpace(SearchString))
+            {
+                allBooks = allBooks
+                    .Where(b => b.Title.Contains(SearchString, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
+
+            Book = allBooks;
         }
     }
 }

@@ -21,5 +21,16 @@ namespace LibraryService
         public User? GetUserByEmail(string email) => _userRepositories.GetUserByEmail(email);
 
         public void UpdateStatus(int userId, bool status) => _userRepositories.UpdateStatus(userId, status);
+
+
+        public void Register(User user)
+        {
+            _userRepositories.Create(user);
+        }
+
+        public bool CheckEmailExists(string email)
+        {
+            return _userRepositories.GetUserByEmail(email) != null;
+        }
     }
 }

@@ -1,0 +1,54 @@
+﻿@page
+@model LibrarySystem.Pages.GuestIndexModel
+@{
+    ViewData["Title"] = "Book List (Guest)";
+}
+
+<h2 class="text-primary">Available Books</h2>
+
+<form method="get" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="SearchTerm" value="@Model.SearchTerm" class="form-control" placeholder="Tìm theo tiêu đề..." />
+        <button type="submit" class="btn btn-outline-primary">Search</button>
+    </div>
+</form>
+
+@if (Model.Books.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tựa sách</th>
+                <th>Tác giả</th>
+                <th>Trạng thái</th>
+                <th>Số lượng</th>
+                <th>Thể loại</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var book in Model.Books)
+        {
+            <tr>
+                <td>@book.Title</td>
+                <td>@book.Author</td>
+                <td>
+                    @if (book.Availability == true)
+                    {
+                        <span class="text-success">Yes</span>
+                    }
+                    else
+                    {
+                        <span class="text-danger">No</span>
+                    }
+                    </td>
+                <td>@book.Quantity</td>
+                <td>@book.Category?.Name</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-warning">No books found.</div>
+}

@@ -4394,11 +4394,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
+      "projectUniqueName": "D:\\SWD392\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
       "projectName": "LibraryBussiness",
-      "projectPath": "E:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
+      "projectPath": "D:\\SWD392\\Library_SWD392_FPT\\LibraryBussiness\\LibraryBussiness.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\Library_SWD392_FPT\\LibraryBussiness\\obj\\",
+      "outputPath": "D:\\SWD392\\Library_SWD392_FPT\\LibraryBussiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4476,7 +4476,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
