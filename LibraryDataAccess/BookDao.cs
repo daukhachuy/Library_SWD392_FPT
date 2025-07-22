@@ -18,11 +18,13 @@ namespace LibraryDataAccess
             try
             {
                 using var _context = new Swd392Group2Context();
-                books = _context.Books.ToList();
+                books = _context.Books
+                        .Include(b => b.Category)
+                        .ToList();
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error get all Users : {ex.Message}");
+                Console.WriteLine($"Error get all Books : {ex.Message}");
             }
             return books;
         }

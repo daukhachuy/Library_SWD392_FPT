@@ -14,6 +14,6 @@ namespace LibraryRepositories
         User? GetUserByEmail(string email);
 
         void UpdateStatus(int userId, bool status);
-        
+        void Create(User user);
     }
 }

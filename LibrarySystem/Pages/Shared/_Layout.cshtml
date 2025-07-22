@@ -32,16 +32,7 @@
                                     <a class="nav-link text-dark" asp-area="" asp-page="/Users/Index">UserManagement</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Topic/Detail">CategoryManagement</a>
-                                </li>
-                            }
-                            else if (role == "User")
-                            {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/TeamMana/ViewTeam">ViewTeams</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Topic/ViewTopic">ViewTopic</a>
+                                    <a class="nav-link text-dark" asp-area="" asp-page="/Categories/Index">CategoryManagement</a>
                                 </li>
                             }
                             <li class="nav-item">
@@ -54,7 +45,13 @@
                         else
                         {
                             <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/GuestIndex">Books</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-page="/Index">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Register">Register</a>
                             </li>
                         }
                     </ul>

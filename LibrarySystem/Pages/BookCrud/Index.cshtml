@@ -9,6 +9,14 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+
+<form method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="SearchTerm" value="@Model.SearchString" class="form-control" placeholder="Tìm sách theo tên..." />
+        <button type="submit" class="btn btn-outline-secondary">🔍 Tìm</button>
+    </div>
+</form>
+
 <table class="table table-bordered table-hover text-center">
     <thead>
         <tr>

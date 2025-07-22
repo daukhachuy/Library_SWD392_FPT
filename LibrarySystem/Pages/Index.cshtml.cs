@@ -1,4 +1,4 @@
-using LibraryBussiness;
+﻿using LibraryBussiness;
 using LibraryRepositories;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -67,10 +67,12 @@ namespace LibrarySystem.Pages
 
                     if (account.Role.Equals("Admin"))
                     {
+                        TempData["LoginSuccess"] = "Đăng nhập thành công, chào mừng " + account.Username;
                         return RedirectToPage("/BookCrud/Index");
                     }
                     if (account.Role.Equals("User"))
                     {
+                        TempData["LoginSuccess"] = "Đăng nhập thành công, chào mừng " + account.Username;
                         return RedirectToPage("/Books/Index");
                     }
 

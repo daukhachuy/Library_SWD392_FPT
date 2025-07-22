@@ -6,6 +6,13 @@
 
 <div class="row">
     <div class="col-md-4">
+        @if (TempData["RegisterSuccess"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["RegisterSuccess"]
+            </div>
+        }
+
         <form asp-controller="Account" asp-action="Login" method="post">
 
             <div class="form-group">

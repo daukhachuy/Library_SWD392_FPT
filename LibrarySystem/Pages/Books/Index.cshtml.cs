@@ -23,9 +23,11 @@ namespace LibraryWeb.Pages.Books
         public HashSet<int> BorrowedBookIds { get; set; } = new();
         public List<BorrowRecord> BorrowedRecords { get; set; } = new();
 
+        [BindProperty(SupportsGet = true)]
+        public string? SearchTerm { get; set; }
+
         public IActionResult OnGet()
         {
-            // Lấy userId từ claims, không dùng session
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim == null)
             {
@@ -36,10 +38,12 @@ namespace LibraryWeb.Pages.Books
 
             Books = _bookService.GetAllBooks();
 
-            var borrowed = _borrowRecordService.GetUnreturnedRecordsByUser(userId);
-
-
-            BorrowedRecords = borrowed;
+            if (!string.IsNullOrEmpty(SearchTerm))
+            {
+                Books = Books
+                    .Where(b => b.Title.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+            }
 
             BorrowedRecords = _borrowRecordService
                 .GetUnreturnedRecordsByUser(userId)

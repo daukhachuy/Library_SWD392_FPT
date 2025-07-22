@@ -2,10 +2,10 @@
 @model LibraryWeb.Pages.Books.IndexModel
 
 <h2>📚 Danh sách sách</h2>
-@if (TempData["SuccessMessage"] != null)
+@if (TempData["LoginSuccess"] != null)
 {
     <div class="alert alert-success">
-        @TempData["SuccessMessage"]
+        @TempData["LoginSuccess"]
     </div>
 }
 @if (TempData["ErrorMessage"] != null)
@@ -14,12 +14,12 @@
         @TempData["ErrorMessage"]
     </div>
 }
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">
-        @TempData["SuccessMessage"]
+<form method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="SearchTerm" value="@Model.SearchTerm" class="form-control" placeholder="Tìm sách theo tên..." />
+        <button type="submit" class="btn btn-outline-secondary">🔍 Tìm</button>
     </div>
-}
+</form>
 
 <table class="table">
     <thead>

@@ -56,5 +56,11 @@ namespace LibraryDataAccess
                 Console.WriteLine($"Error update User status: {ex.Message}");
             }
         }
+        public void Insert(User user)
+        {
+            using var context = new Swd392Group2Context();
+            context.Users.Add(user);
+            context.SaveChanges();
+        }
     }
 }
